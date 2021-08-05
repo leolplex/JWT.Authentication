@@ -10,15 +10,14 @@ namespace JWTAuthentication.Controllers
     [ApiController]
     public class CityController : ControllerBase
     {
-        private readonly IUserService _userService = null;
+
         private ApplicationDbContext appdbcontext = null;
 
-        public CityController(IUserService userService, ApplicationDbContext _adb)
+        public CityController(ApplicationDbContext _adb)
         {
-            _userService = userService;
             appdbcontext = _adb;
         }
-        
+
         [Authorize]
         [HttpGet]
         [Route("AllCities")]
