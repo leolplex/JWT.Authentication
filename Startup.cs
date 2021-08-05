@@ -1,5 +1,6 @@
 using System;
 using System.Text;
+using JWTAuthentication.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;

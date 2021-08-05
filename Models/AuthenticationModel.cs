@@ -1,5 +1,5 @@
 
-namespace JWTAuthentication
+namespace JWTAuthentication.Models
 {
     public class AuthenticationModel
     {
