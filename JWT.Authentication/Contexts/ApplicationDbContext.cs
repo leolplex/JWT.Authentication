@@ -6,7 +6,9 @@ namespace JWTAuthentication
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        public DbSet<CountryInfo> CountryInfos { get; set; }
+        public virtual DbSet<CountryInfo> CountryInfos { get; set; }
+
+        public ApplicationDbContext() { }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
         }
